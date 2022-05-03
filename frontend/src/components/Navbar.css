@@ -1,0 +1,16 @@
+.nav-link1{
+    color: red;
+}
+.nav-link1:hover{
+    text-decoration: none;
+    color: brown;
+}
+
+
+.navigation{
+    color: red;
+}
+.navigation:hover{
+    text-decoration: none;
+    color: brown;
+}
