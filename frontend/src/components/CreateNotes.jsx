@@ -5,7 +5,8 @@ import axios from "axios";
 function CreateNote() {
     const [input, setInput] = useState({
             title: '',
-            content: ''
+            content: '',
+            date: new Date()
     })
    
    
@@ -24,7 +25,8 @@ function CreateNote() {
          event.preventDefault();
          const newNote = {
              title: input.title,
-             content: input.content
+             content: input.content,
+             date: input.date
          }
          axios.post('http://localhost:3001/create', newNote)
     }

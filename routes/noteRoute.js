@@ -9,6 +9,7 @@ router.route("/create").post((req, res) => {
     const newNote = new Note({
         title,
         content
+        
     });
     newNote.save();
 })
